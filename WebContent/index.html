@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="testApp">
+<html lang="en" data-ng-app="testApp">
 <head>
 <meta charset="ISO-8859-1">
 <title>Insert title here</title>
@@ -16,9 +16,9 @@ li {
 </style>
 </head>
 <body>
-	<div ng-controller="testController">
+	<div data-ng-controller="testController">
 		<ul>
-			<li ng-repeat="contact in contacts">
+			<li data-ng-repeat="contact in contacts">
 			<img src="{{contact.image}}" width="50" height="60" align="right" /> 
 			Name: <span>{{contact.name}}</span><br /><br /> 
 			Contact Number: {{contact.contactNumber}}</li>
